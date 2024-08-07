@@ -35,6 +35,14 @@ def scrapping_data(urls):
 
 
 st.set_page_config(layout="wide")
+st.markdown("""
+<style>
+    [data-testid=stSidebar] {
+        background-color: #78ADE2;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 def main():
     values = ["Scrapping","About"]
     st.sidebar.selectbox("Valores",values)
